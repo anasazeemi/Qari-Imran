@@ -1,10 +1,13 @@
+import videos from '../data/videos.json';
+import VideoEmbed from '../components/VideoEmbed';
+
 export default function Videos() {
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-4">Videos & Lectures</h1>
-      <p className="text-gray-700">
-        Recorded classes, recitations, and lectures delivered by Qari Imran Khan.
-      </p>
+      <h1 className="text-2xl font-bold mb-6">Videos & Lectures</h1>
+      {videos.map((video, idx) => (
+        <VideoEmbed key={idx} {...video} />
+      ))}
     </div>
   );
 }

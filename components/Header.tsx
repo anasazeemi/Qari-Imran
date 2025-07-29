@@ -10,6 +10,7 @@ export default function Header() {
         <ul className="flex space-x-6 text-sm">
           <li><Link href="/about">About</Link></li>
           <li><Link href="/articles">Articles</Link></li>
+          <li><Link href="/gallery">Gallery</Link></li>
           <li><Link href="/videos">Videos</Link></li>
           <li><Link href="/tributes">Tributes</Link></li>
         </ul>
